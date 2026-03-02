@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1e1e2f, #2b2b45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.container {
+    background: #181828;
+    width: 350px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.player-img {
+    width: 100%;
+    height: 200px;
+    background: #333;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("WhatsApp Image 2025-12-02 at 17.10.34_b7eee06a.jpg");
+}
+
+.song-info {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.song-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.song-artist,
+.song-album {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.progress-container {
+    background: #444;
+    height: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.progress {
+    background: #00c3ff;
+    height: 100%;
+    width: 0%;
+    border-radius: 5px;
+}
+
+.time-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.controls button {
+    background: #2b2b45;
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.controls button:hover {
+    background: #00c3ff;
+}
+
+.play-btn {
+    font-size: 24px;
+    padding: 12px;
+}
+
+.volume-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.volume-slider {
+    width: 100%;
+}
+
+.playlist-container {
+    background: #202036;
+    padding: 10px;
+    border-radius: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.playlist-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.add-song-btn {
+    background: #00c3ff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.file-input {
+    display: none;
+}
+
+.playlist-item {
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.playlist-item:hover {
+    background: #2b2b45;
+}
+
+.playlist-item.active {
+    background: #00c3ff;
+}
+
